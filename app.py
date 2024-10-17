@@ -1,7 +1,6 @@
 # app.py
 
 import streamlit as st
-from graphviz import Digraph
 
 st.title('Heart Failure Care Pathway Flowchart in Region Stockholm')
 
@@ -73,4 +72,5 @@ digraph heart_failure_flowchart {
 }
 '''
 
+# Render the graph using Streamlit's built-in function
 st.graphviz_chart(dot)
